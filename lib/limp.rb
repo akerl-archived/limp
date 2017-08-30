@@ -1,3 +1,5 @@
+##
+# Singleton module for exposing tokens
 module Limp
   class << self
     def tokens
@@ -25,7 +27,7 @@ module Limp
     end
 
     def read_tokens(db)
-      File.read(db).force_encoding("ASCII-8BIT").scan(token_regex)
+      File.read(db).force_encoding('ASCII-8BIT').scan(token_regex)
     end
   end
 end
