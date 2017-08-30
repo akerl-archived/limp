@@ -5,7 +5,7 @@ limp
 [![Dependency Status](https://img.shields.io/gemnasium/akerl/limp.svg)](https://gemnasium.com/akerl/limp)
 [![Build Status](https://img.shields.io/circleci/project/akerl/limp.svg)](https://circleci.com/gh/akerl/limp)
 [![Coverage Status](https://img.shields.io/codecov/c/github/akerl/limp.svg)](https://codecov.io/github/akerl/limp)
-[![Code Quality](https://img.shields.io/codacy/.svg)](https://www.codacy.com/app/akerl/limp)
+[![Code Quality](https://img.shields.io/codacy/99f2b9753a8e4b22a0bd9485e758d9cf.svg)](https://www.codacy.com/app/akerl/limp)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 Read Slack tokens from Chrome LocalStorage
