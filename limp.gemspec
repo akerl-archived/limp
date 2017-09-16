@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.date        = Time.now.strftime('%Y-%m-%d')
 
   s.summary     = 'Chrome Slack token reader'
-  s.description = "Read Slack tokens from Chrome LocalStorage"
+  s.description = 'Read Slack tokens from Chrome LocalStorage'
   s.authors     = ['Les Aker']
   s.email       = 'me@lesaker.org'
   s.homepage    = 'https://github.com/akerl/limp'
