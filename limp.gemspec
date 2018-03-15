@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/akerl/limp'
   s.license     = 'MIT'
 
+  s.executables = ['limp']
   s.files       = `git ls-files`.split
   s.test_files  = `git ls-files spec/*`.split
 
