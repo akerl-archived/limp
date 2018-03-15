@@ -3,7 +3,7 @@
 module Limp
   class << self
     def tokens
-      @tokens ||= db_files.map { |x| read_tokens(x) }.flatten
+      @tokens ||= db_files.map { |x| read_tokens(x) }.flatten.uniq
     end
 
     private
