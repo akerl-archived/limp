@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'limp'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = Time.now.strftime('%Y-%m-%d')
 
   s.summary     = 'Chrome Slack token reader'
@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
   s.executables = ['limp']
   s.files       = `git ls-files`.split
   s.test_files  = `git ls-files spec/*`.split
+
+  s.add_dependency 'slack-ruby-client', '~> 0.13.1'
 
   s.add_development_dependency 'codecov', '~> 0.1.1'
   s.add_development_dependency 'fuubar', '~> 2.3.0'

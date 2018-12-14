@@ -1,3 +1,5 @@
+require 'slack-ruby-client'
+
 ##
 # Singleton module for exposing tokens
 module Limp
@@ -6,7 +8,18 @@ module Limp
       @tokens ||= db_files.map { |x| read_tokens(x) }.flatten.uniq
     end
 
+    def clients
+      @clients ||= tokens.map { |x| team_and_client(x) }.compact.to_h.values
+    end
+
     private
+
+    def team_and_client(token)
+      client = Slack::Web::Client.new(token: token)
+      [client.team_info.team.id, client]
+    rescue Slack::Web::Api::Errors::SlackError
+      nil
+    end
 
     def base_dir
       @base_dir ||= File.expand_path(
